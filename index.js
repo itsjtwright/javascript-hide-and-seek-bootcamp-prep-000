@@ -20,4 +20,9 @@ function deepestChild() {
   }
 }
 
-function 
+function increaseRankBy(n) {
+  for(item of document.querySelector("ul.ranked-list li")) {
+    item.innerHTML =
+    parseInt(item.innerHTML)+n;
+  }
+}
