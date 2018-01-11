@@ -11,11 +11,13 @@ function deepestChild() {
   let flag = true;
   let elm = document.querySelector("div#grand-node")
   while (flag === true) {
-    if(elm.firstChild) {
-      elm = elm.firstChild
+    if(elm.firstElementChild) {
+      elm = elm.firstElementChild
     } else {
       flag = false;
       return elm;
     }
   }
 }
+
+function 
