@@ -22,7 +22,7 @@ function deepestChild() {
 
 function increaseRankBy(n) {
   let items = document.querySelector("ul.ranked-list li");
-  for(item of items) {
+  for(item in items) {
     item.innerHTML =
     parseInt(item.innerHTML)+n;
   }
